@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_fractol.c                                     :+:      :+:    :+:   */
+/*   mandelbrot.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marrow <marrow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/17 14:33:45 by marrow            #+#    #+#             */
-/*   Updated: 2020/11/17 16:26:51 by marrow           ###   ########.fr       */
+/*   Created: 2020/11/17 16:27:29 by marrow            #+#    #+#             */
+/*   Updated: 2020/11/17 16:29:14 by marrow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractal.h"
 
-void		init_fractal(t_fractal *fractal, char *name)
+int					mandelbrot(t_fractol *fractal)
 {
-	fractal->mlx_ptr = NULL;
-	fractal->name = name;
-	fractal->win_ptr = NULL;
+
 }

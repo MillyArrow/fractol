@@ -1,20 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_fractol.c                                     :+:      :+:    :+:   */
+/*   fractal.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marrow <marrow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/17 14:33:45 by marrow            #+#    #+#             */
-/*   Updated: 2020/11/17 16:26:51 by marrow           ###   ########.fr       */
+/*   Created: 2020/11/17 16:14:18 by marrow            #+#    #+#             */
+/*   Updated: 2020/11/17 16:26:42 by marrow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#ifndef FRACTAL_H
+# define FRACTAL_H
 
-void		init_fractal(t_fractal *fractal, char *name)
+# include <mlx.h>
+# include "libft.h"
+# include <stdlib.h>
+# include <stdbool.h>
+# include <math.h>
+# define HEIGHT 800
+# define WIDTH 600
+
+typedef struct      s_fractol
 {
-	fractal->mlx_ptr = NULL;
-	fractal->name = name;
-	fractal->win_ptr = NULL;
-}
+    char            *name;
+    void            *mlx_ptr;
+    void            *win_ptr;
+}                   t_fractol;
+
+
+#endif
